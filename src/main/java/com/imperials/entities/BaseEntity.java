@@ -28,8 +28,8 @@ public class BaseEntity implements Serializable {
     private static final long serialVersionUID = 2014051612257L;
     
     @Id
-    @SequenceGenerator(name="idgen", sequenceName="id_seq")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE ,generator="idgen")
+//    @SequenceGenerator(name="idgen", sequenceName="id_seq")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID")
     protected Integer id;
 
